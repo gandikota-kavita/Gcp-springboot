@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: docker-gcpimage
+  labels:
+    name: docker-gcpimage
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8082
+      protocol: TCP
+  selector:
+    app: docker-gcpimage
+  type: LoadBalancer

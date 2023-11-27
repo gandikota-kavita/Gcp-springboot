@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docker-gcpimage
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: docker-gcpimage
+  template:
+    metadata:
+      labels:
+        app: docker-gcpimage
+    spec:
+      containers:
+        - name: docker-gcpimage
+          image: 'gcr.io/pacific-cab-401906/docker-gcpimage:v1'
+          ports:
+            - containerPort: 8080
