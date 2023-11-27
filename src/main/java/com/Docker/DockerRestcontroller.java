@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DockerRestcontroller {
 	@GetMapping("/")
 	public String WelcomeMsg() {
-		return "Deploying springboot application is deployed";
+		return "Deploying springboot application is deployed on cluster.";
 	}
 	
 }	
