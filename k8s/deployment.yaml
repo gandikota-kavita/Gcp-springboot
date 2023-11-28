@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: docker-gcpimage
-          image: 'gcr.io/pacific-cab-401906/docker-gcpimage:v1'
+          image: 'gcr.io/pacific-cab-401906/docker-gcpimage:v2'
           ports:
             - containerPort: 8080
